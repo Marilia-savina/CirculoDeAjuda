@@ -13,12 +13,13 @@ const banco = async () => {
         id INTEGER PRIMARY KEY AUTOINCREMENT,
         nome TEXT,
         endereco TEXT,
-        telefone TExT,
+        telefone TEXT,
         vagas_total INTEGER,
         vagas_disponiveis INTEGER,
         aceita_pets TEXT
         )
     `)
+    console.log('tabela abrigo criada com sucesso!!!!')
 
      await db.exec(`
        CREATE TABLE IF NOT EXISTS pedidos (
@@ -26,9 +27,11 @@ const banco = async () => {
        nome TEXT,
        qt_pessoas INTEGER,
        localizacao TEXT,
-       status TEXT
+       status TEXT DEFAULT 'EM ANALISE'
        )         
     `)
+    console.log('tabela pedidos criada com sucesso!!!')
+
 return db
 }
 module.exports = {banco}

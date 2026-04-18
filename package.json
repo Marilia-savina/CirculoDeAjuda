@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "dependencies": {
     "cors": "^2.8.6",
     "expess": "^0.0.1-security",
+    "express": "^5.2.1",
     "sqlite": "^5.1.1",
     "sqlite3": "^6.0.1"
   },
