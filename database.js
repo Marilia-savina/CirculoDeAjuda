@@ -16,7 +16,9 @@ const banco = async () => {
         telefone TEXT,
         vagas_total INTEGER,
         vagas_disponiveis INTEGER,
-        aceita_pets TEXT
+        aceita_pets TEXT,
+        latitude REAL,
+        longitude REAL
         )
     `)
     console.log('tabela abrigo criada com sucesso!!!!')
